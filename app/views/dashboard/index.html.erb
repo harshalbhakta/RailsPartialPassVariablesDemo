@@ -1,0 +1,22 @@
+<div>
+
+  <p>This is it</p>
+
+  <p>
+    <%= render "status", current_status: "Hello" %>
+  </p>
+
+  <p>
+    <%= render partial: "status", locals: { current_status: "Hello" } %>
+  </p>
+
+  <p>
+    <%= render "status_one", current_status_one: "Hello" %>
+    <%= render "status_one" %>
+  </p>
+
+  <p>
+    <%= render partial: "status_two" %>
+  </p>
+
+</div>
